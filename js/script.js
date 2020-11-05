@@ -45,7 +45,7 @@ var userNum = [];
 setTimeout(function(){
 
   while (userNum.length < RANDOM_NUMBERS){
-     var insertNum = prompt('INSERISCI UN NUMERO')
+     var insertNum = parseInt(prompt('INSERISCI UN NUMERO'))
      userNum.push(insertNum);
   }
 
