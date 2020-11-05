@@ -43,32 +43,36 @@ console.log(casualNum)
 var userNum = [];
 
 setTimeout(function(){
+
   while (userNum.length < RANDOM_NUMBERS){
      var insertNum = prompt('INSERISCI UN NUMERO')
      userNum.push(insertNum);
   }
-}, 5000)
 
-console.log(userNum)
+
+   console.log(userNum);
 
 //Una volta inseriti i 5 numeri,
 //il software dice quanti e quali
 //numeri sono stati ricordati
-var howMany = 0
-var whatAre = []
+   var howMany = 0;
+   var whatAre = [];
 
-for( i=0 ; i < userNum.length ; i++){
-    var userNumEl = userNum[i];
-  if (isInArray(userNumEl,casualNum)){
+   for( i=0 ; i < userNum.length ; i++){
+     var userNumEl = userNum[i];
+     console.log (userNumEl)
+     if (isInArray(userNumEl, casualNum)){
      howMany += 1;
-     whatAre.push(i);
-  }
-}
+     whatAre.push(userNumEl);
+      }
+    }
 
+     console.log (whatAre)
+console.log (howMany)
 $('#result_how_many').html('Sono stati trovati ' + howMany + ' numeri')
 $('#result_what_are').html('Hai trovato: ' + whatAre)
 
-
+}, 5000)
 
 
 
