@@ -70,7 +70,7 @@ setTimeout(function(){
      console.log (whatAre)
 console.log (howMany)
 $('#result_how_many').html('Sono stati trovati ' + howMany + ' numeri')
-$('#result_what_are').html('Hai trovato: ' + whatAre)
+$('#result_what_are').html('Hai trovato questi numeri: ' + whatAre)
 
 }, 5000)
 
